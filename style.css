@@ -1,0 +1,90 @@
+
+    
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #2a363b; 
+            background-image: url('https://www.transparenttextures.com/patterns/rocky-wall.png');
+            color: #EAEAEA; 
+        }
+
+        h1, h2, h3, .font-cinzel {
+            font-family: 'Cinzel', serif;
+            font-weight: 700;
+            letter-spacing: 1px;
+            color: #f4d03f;
+        }
+        
+       
+        .card {
+            background-color: rgba(44, 62, 80, 0.85); 
+            backdrop-filter: blur(5px);
+            border: 1px solid #4a5a6a;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+        }
+
+  
+        details > summary {
+            list-style: none; 
+            cursor: pointer;
+            padding: 1rem;
+            border-bottom: 2px solid #4a5a6a;
+            transition: background-color 0.3s ease;
+        }
+
+        details > summary::-webkit-details-marker {
+            display: none; 
+        }
+
+        details > summary::before {
+            content: '►'; 
+            margin-right: 0.75rem;
+            font-size: 0.8em;
+            color: #f4d03f;
+            transition: transform 0.3s ease;
+        }
+
+        details[open] > summary::before {
+            transform: rotate(90deg);
+        }
+
+        details[open] > summary {
+            background-color: rgba(244, 208, 63, 0.1);
+        }
+        
+        details > div {
+            padding: 1.5rem;
+            border-top: 1px solid #4a5a6a;
+        }
+
+       
+        .hp-button {
+            background-color: #a98d6e; 
+            color: #ffffff;
+            font-weight: bold;
+            border: 1px solid #8c735a;
+            transition: all 0.2s ease-in-out;
+        }
+
+        .hp-button:hover {
+            background-color: #8c735a;
+            transform: scale(1.05);
+        }
+        
+        .hp-button:active {
+            transform: scale(0.98);
+        }
+        
+        /* Estilo para a tabela de perícias */
+        .skill-table td {
+            padding: 0.5rem 0.75rem;
+            border-bottom: 1px solid #4a5a6a;
+        }
+        .skill-table tr:last-child td {
+            border-bottom: none;
+        }
+        .proficient::before {
+            content: 'o';
+            color: #f4d03f;
+            font-size: 1.5em;
+            margin-right: 0.5rem;
+        }

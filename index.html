@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ficha de Personagem: Vorthak, o Juramento sangrento</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="p-4 md:p-8">
+
+    <main class="max-w-4xl mx-auto space-y-6">
+
+        <header class="card rounded-lg p-6 text-center">
+            <h1 class="text-4xl md:text-5xl mb-2">Vorthak</h1>
+            <p class="text-xl text-gray-300">O Protetor Selvagem</p>
+            <div class="mt-4 grid grid-cols-2 md:grid-cols-4 gap-4 text-sm">
+                <div>
+                    <span class="block text-gray-400">Raça</span>
+                    <span class="font-bold">Golias</span>
+                </div>
+                <div>
+                    <span class="block text-gray-400">Classe</span>
+                    <span class="font-bold">Bárbaro 3</span>
+                </div>
+                <div>
+                    <span class="block text-gray-400">Antecedente</span>
+                    <span class="font-bold">Forasteiro</span>
+                </div>
+                 <div>
+                    <span class="block text-gray-400">Alinhamento</span>
+                    <span class="font-bold">Caótico Bom</span>
+                </div>
+            </div>
+        </header>
+
+        <section class="grid grid-cols-1 md:grid-cols-3 gap-4 text-center">
+            <div class="card rounded-lg p-6 flex flex-col items-center justify-center">
+                <h3 class="text-lg mb-2 font-cinzel">Pontos de Vida</h3>
+                <div class="flex items-center gap-4">
+                    <button id="decrease-hp" class="hp-button w-10 h-10 rounded-full text-2xl flex items-center justify-center pb-1">-</button>
+                    <span id="current-hp" class="text-5xl font-bold">32</span>
+                    <button id="increase-hp" class="hp-button w-10 h-10 rounded-full text-2xl flex items-center justify-center pb-1">+</button>
+                </div>
+                <span class="text-gray-400 mt-2">Total: 32</span>
+            </div>
+            <div class="card rounded-lg p-6 flex flex-col items-center justify-center">
+                <h3 class="text-lg mb-2 font-cinzel">Classe de Armadura</h3>
+                <span class="text-5xl font-bold">13</span>
+                 <span class="text-gray-400 mt-2">Defesa sem Armadura</span>
+            </div>
+            <div class="card rounded-lg p-6 flex flex-col items-center justify-center">
+                <h3 class="text-lg mb-2 font-cinzel">Deslocamento</h3>
+                <span class="text-5xl font-bold">9m</span>
+                 <span class="text-gray-400 mt-2">30 pés</span>
+            </div>
+        </section>
+
+        <section class="grid grid-cols-1 lg:grid-cols-3 gap-4">
+            <div class="lg:col-span-1 space-y-3 text-center">
+                <div class="card rounded-lg p-4">
+                    <span class="text-gray-400">Força</span>
+                    <p class="text-2xl font-bold">17 (+3)</p>
+                </div>
+                 <div class="card rounded-lg p-4">
+                    <span class="text-gray-400">Destreza</span>
+                    <p class="text-2xl font-bold">13 (+1)</p>
+                </div>
+                 <div class="card rounded-lg p-4">
+                    <span class="text-gray-400">Constituição</span>
+                    <p class="text-2xl font-bold">15 (+2)</p>
+                </div>
+                 <div class="card rounded-lg p-4">
+                    <span class="text-gray-400">Inteligência</span>
+                    <p class="text-2xl font-bold">8 (-1)</p>
+                </div>
+                 <div class="card rounded-lg p-4">
+                    <span class="text-gray-400">Sabedoria</span>
+                    <p class="text-2xl font-bold">12 (+1)</p>
+                </div>
+                 <div class="card rounded-lg p-4">
+                    <span class="text-gray-400">Carisma</span>
+                    <p class="text-2xl font-bold">10 (0)</p>
+                </div>
+            </div>
+
+            <div class="lg:col-span-2 card rounded-lg p-6">
+                <div class="mb-6">
+                    <h3 class="font-cinzel text-xl mb-3">Testes de Resistência</h3>
+                    <div class="grid grid-cols-2 sm:grid-cols-3 gap-2 text-sm">
+                        <p class="proficient"><strong>+5</strong> Força</p>
+                        <p><strong>+1</strong> Destreza</p>
+                        <p class="proficient"><strong>+4</strong> Constituição</p>
+                        <p><strong>-1</strong> Inteligência</p>
+                        <p><strong>+1</strong> Sabedoria</p>
+                        <p><strong>+0</strong> Carisma</p>
+                    </div>
+                    <p class="text-xs text-gray-400 mt-2">Bônus de Proficiência: +2</p>
+                </div>
+                 <hr class="border-gray-600 mb-6">
+                <div>
+                    <h3 class="font-cinzel text-xl mb-3">Perícias</h3>
+                    <table class="w-full text-left text-sm skill-table">
+                        <tbody>
+                            <tr><td>+1 Acrobacia (DES)</td><td class="proficient">+5 Atletismo (FOR)</td></tr>
+                            <tr><td>+0 Atuação (CAR)</td><td>+0 Enganação (CAR)</td></tr>
+                            <tr><td>-1 Arcanismo (INT)</td><td>+1 Adestrar Animais (SAB)</td></tr>
+                            <tr><td>-1 História (INT)</td><td class="proficient">+2 Intimidação (CAR)</td></tr>
+                            <tr><td>+1 Intuição (SAB)</td><td>-1 Investigação (INT)</td></tr>
+                            <tr><td>+1 Medicina (SAB)</td><td>-1 Natureza (INT)</td></tr>
+                            <tr><td>PROF +3 Percepção (SAB)</td><td>+0 Persuasão (CAR)</td></tr>
+                            <tr><td>-1 Religião (INT)</td><td>+1 Prestidigitação (DES)</td></tr>
+                            <tr><td>+1 Furtividade (DES)</td><td class="proficient">+3 Sobrevivência (SAB)</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section class="card rounded-lg p-6">
+            <h2 class="text-2xl mb-4">Ataques e Inventário</h2>
+            <div class="space-y-3 mb-6">
+                <div class="p-3 bg-black bg-opacity-20 rounded-md">
+                    <p><strong>Machado Grande:</strong> <span class="text-yellow-300">+5</span> para acertar, dano <span class="text-yellow-300">1d12+3</span> cortante (+2 com Fúria).</p>
+                    <p class="text-xs text-gray-400">Propriedades: Pesada, Duas Mãos.</p>
+                </div>
+                 <div class="p-3 bg-black bg-opacity-20 rounded-md">
+                    <p><strong>Machado de Mão (x2):</strong> <span class="text-yellow-300">+5</span> para acertar, dano <span class="text-yellow-300">1d6+3</span> cortante. Arremesso (6/18m).</p>
+                     <p class="text-xs text-gray-400">Propriedades: Leve, Arremesso.</p>
+                </div>
+                 <div class="p-3 bg-black bg-opacity-20 rounded-md">
+                    <p><strong>Azagaia (x4):</strong> <span class="text-yellow-300">+5</span> para acertar, dano <span class="text-yellow-300">1d6+3</span> perfurante. Arremesso (9/36m).</p>
+                    <p class="text-xs text-gray-400">Propriedades: Arremesso.</p>
+                </div>
+            </div>
+            
+            <hr class="border-gray-600 mb-6">
+            
+            <h3 class="font-cinzel text-xl mb-4">Equipamento Notável</h3>
+            <div class="space-y-4 text-gray-300">
+                <div class="p-4 bg-black bg-opacity-20 rounded-md">
+                    <h4 class="font-bold text-yellow-400">Dente de Urso-Coruja (Troféu)</h4>
+                    <p class="text-sm">Um dente amarelado e serrilhado, usado como colar. É o símbolo de um rito de passagem, um lembrete constante da força e da capacidade de sobrevivência de Vorthak.</p>
+                </div>
+                 <div class="p-4 bg-black bg-opacity-20 rounded-md">
+                    <h4 class="font-bold text-yellow-400">Pacote de Explorador</h4>
+                    <p class="text-sm">O kit essencial para sobrevivência, contendo uma mochila, saco de dormir, kit de refeição, caixa de fogo, 10 tochas, 10 dias de rações, um odre e 15m de corda.</p>
+                </div>
+                <div class="p-4 bg-black bg-opacity-20 rounded-md">
+                    <h4 class="font-bold text-yellow-400">Armadilha de Caça</h4>
+                    <p class="text-sm">Ferramenta para caça e combate. Uma criatura que pisa nela deve passar num teste de Destreza CD 13 ou sofre 1d4 de dano e fica com deslocamento 0.</p>
+                </div>
+                <div class="p-4 bg-black bg-opacity-20 rounded-md">
+                    <h4 class="font-bold text-yellow-400">Tambor</h4>
+                    <p class="text-sm">Um tambor de mão primitivo. Vorthak o usa em rituais tribais, para manter o moral ou para soar uma batida de guerra intimidante.</p>
+                </div>
+                 <div class="p-4 bg-black bg-opacity-20 rounded-md">
+                    <h4 class="font-bold text-yellow-400">Outros Itens</h4>
+                    <p class="text-sm">Um cajado de madeira (arma versátil 1d6/1d8), uma bolsa com 10 peças de ouro, e os idiomas conhecidos: Comum, Gigante e Silvestre.</p>
+                </div>
+            </div>
+        </section>
+        
+        <details class="card rounded-lg">
+            <summary><h2 class="inline text-2xl">Apresentação do Personagem</h2></summary>
+            <div class="prose prose-invert max-w-none text-gray-300">
+                <p>Vorthak é o último sobrevivente de sua tribo, os Montanheses, um povo resistente que vivia isolado nas montanhas de Un’Goro, em harmonia com a natureza e devotado aos antigos titãs. A vida era dura, mas cheia de significado.
+
+                    Sua tribo foi brutalmente destruída quando foi atacada por desconhecidos. Vorthak presenciou a queda de seu povo, a fuga desesperada dos inocentes e a morte cruel de sua amada Esthra diante de seus olhos. Ele lutou com tudo o que tinha, mas não foi o bastante. Derrotado, restou-lhe apenas o silêncio e a dor da perda.
+                    
+                    Desde então, Vorthak vaga sozinho pelas terras selvagens, marcado por cicatrizes físicas e emocionais. Ele não é mais um homem comum — tornou-se uma força movida por dor, raiva e culpa. Cada batalha é uma tentativa de silenciar os fantasmas do passado e encontrar algum propósito para continuar.
+                    
+                    Embora carregue o peso da culpa por não ter conseguido proteger os seus, ele ainda guarda esperança de que os titãs de sua cultura possam, algum dia, mostrar-lhe um caminho para redenção. Ele não busca glória ou heroísmo, apenas um motivo para não se tornar um monstro.
+                    
+                    Enquanto isso, Vorthak segue adiante — com o machado em mãos, a memória dos mortos no coração, e o desejo silencioso de um novo começo.
+                    
+                    </p>
+            </div>
+        </details>
+        
+        <details class="card rounded-lg">
+            <summary><h2 class="inline text-2xl">Características Especiais</h2></summary>
+            <div class="prose prose-invert max-w-none text-gray-300 space-y-4">
+                <p><strong>Fúria (3/descanso longo):</strong> Ativação: Ação bônus.
+
+                    Efeitos enquanto estiver em fúria:
+                    <br>
+                    Vantagem em testes de Força (como Atletismo e testes para quebrar/grapplar).
+                    <br>
+                    +2 de dano em ataques corpo a corpo que usem Força.
+                    <br>
+                    Resistência a dano concussivo, perfurante e cortante (dano físico).
+                    <br>
+                    Duração: Até 1 minuto (10 turnos). Termina se você:
+                    <br>
+                    Ficar inconsciente.
+                    <br>
+                    Não atacar ou sofrer dano desde o seu turno anterior.</p>
+                <p><strong>Ataque Descuidado:</strong> Uso: Ao fazer seu primeiro ataque no turno.
+                      <br>
+                    Efeito:
+                     <br>
+                    Você ataca com vantagem.
+                    <br>
+                    Em troca, todos os ataques contra você até o início do seu próximo turno têm vantagem.
+                    <br>
+                    Aplicação estratégica: Ideal quando precisa garantir um acerto ou maximizar dano, especialmente no início do combate.</p>
+                <p><strong>Protetores Ancestrais:</strong> Pré-requisito: Estar em Fúria.
+                       <br>
+                    Efeito:
+                    <br>
+                    A primeira criatura que você acerta com um ataque corpo a corpo durante a fúria:
+                    <br>
+                    Tem desvantagem em ataques contra qualquer outro alvo que não seja você até o início do seu próximo turno.
+                    <br>
+                    Caso ela ataque outro alvo, esse alvo tem resistência ao dano causado pelo ataque.
+                    <br>
+                    Uso tático: Ideal para proteger aliados em combate, direcionando o foco dos inimigos para você.</p>
+                <p><strong>Resistência da Pedra (1/descanso):</strong>Ativação: Reação ao sofrer dano.
+                    <br>
+                    Efeito: Reduz o dano recebido em 1d12 + seu modificador de Constituição.
+                    <br>
+                    Observações:
+                    <br>
+                    Pode ser usado para absorver um grande golpe e continuar em pé.
+                    <br>
+                    Funciona contra qualquer tipo de dano.</p>
+                <p><strong>Sentido de Perigo:</strong>Efeito:
+                    Efeito:
+                    <br>
+                    Vantagem em testes de resistência de Destreza contra efeitos que você possa ver, como:
+                    <br>
+                    Traps (armadilhas)
+                    <br>
+                    Magias como Fireball, Lightning Bolt, etc.
+                    <br>
+                    Pré-requisito: Você não pode estar cego, surdo ou incapacitado.
+                    Vantagem em testes de resistência de Destreza contra efeitos que você possa ver, como:
+                    <br>
+                    Traps (armadilhas)
+                    <br>
+                    Magias como Fireball, Lightning Bolt, etc.
+                    <br>
+                    Pré-requisito: Você não pode estar cego, surdo ou incapacitado.</p>
+                <p><strong>Defesa sem Armadura:</strong> Cálculo da CA:
+                     <br>
+                    Classe de Armadura (CA) = 10 + modificador de Destreza + modificador de Constituição.
+                    <br>
+                    Observação:
+                    <br>
+                    Só funciona se você não estiver vestindo armadura.
+                    <br>
+                    Pode usar escudo sem perder esse benefício.</p>
+                 <p><strong>Errante:</strong>Capacidade de Navegação:
+                       <br>
+                    Memória excepcional para terrenos, mapas e rotas.
+                    <br>
+                    Você nunca se perde, exceto por influência mágica.
+                    <br>
+                    Fornecimento de Recursos:
+                    <br>
+                    Consegue encontrar comida e água suficientes para si mesmo e até cinco outras criaturas por dia, desde que o ambiente tenha recursos.</p>
+                <p><strong>Poderio Atlético:</strong>Capacidade física ampliada:
+                    <br>
+                    Você é considerado como se tivesse uma categoria de tamanho maior (como Grande) apenas para:
+                    <br>
+                    Capacidade de carga.
+                    <br>
+                    Levantar, empurrar e puxar objetos.
+                    <br>
+                    Utilidade: Pode carregar mais peso, mover objetos grandes ou resistir a tentativas de empurrão ou agarrão com mais eficácia.</p>
+            </div>
+        </details>
+
+        <details class="card rounded-lg">
+            <summary><h2 class="inline text-2xl">Características Gerais Vorthak</h2></summary>
+            <div class="prose prose-invert max-w-none text-gray-300">
+                <ul>
+                    <li><strong>Traço de Personalidade:</strong> "Sou um homem de poucas palavras, mas minhas ações falam mais alto."</li>
+                    <li><strong>Ideal:</strong> "Minha força existe para proteger aqueles que não podem se defender sozinhos. É o legado de meus ancestrais."</li>
+                    <li><strong>Vínculo:</strong> "Devo honrar os espíritos de meus ancestrais e de estar em tudo que faço, pois eles me guiam e me fortalecem."</li>
+                    <li><strong>Defeito:</strong> "Tenho pouca paciência para as leis e costumes da cidade; a lei da natureza é a única que realmente importa."</li>
+                </ul>
+            </div>
+        </details>
+        
+        <footer class="text-center text-xs text-gray-500 py-4">
+            <p>Ficha criada por Ernandy Lucena</p>
+        </footer>
+
+    </main>
+
+    <script>
+     
+
+       
+        const currentHpElement = document.getElementById('current-hp');
+        const increaseHpButton = document.getElementById('increase-hp');
+        const decreaseHpButton = document.getElementById('decrease-hp');
+
+
+        const maxHp = 32;
+
+        increaseHpButton.addEventListener('click', () => {
+          
+            let currentHp = parseInt(currentHpElement.textContent);
+          
+            if (currentHp < maxHp) {
+                currentHp++;
+               
+                currentHpElement.textContent = currentHp;
+            }
+        });
+
+
+        decreaseHpButton.addEventListener('click', () => {
+       
+            let currentHp = parseInt(currentHpElement.textContent);
+     
+            if (currentHp > 0) {
+                currentHp--;
+              
+                currentHpElement.textContent = currentHp;
+            }
+        });
+    </script>
+
+</body>
+</html>
