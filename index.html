@@ -17,8 +17,8 @@
         <header class="card rounded-lg p-6 text-center">
             <img class="img-user" src="image/vortk.jpeg" alt="">
             <h1 class="text-4xl mt-8 md:text-5xl mb-2">Vorthak</h1>
-            <p class="text-xl text-gray-300">O Protetor Selvagem</p>
-            <div class="mt-4 grid grid-cols-2 md:grid-cols-4 gap-4 text-sm">
+            <p class="text-xl text-gray-300">Juramento de sangue</p>
+            <div class="mt-10 grid grid-cols-2 md:grid-cols-4 gap-4 text-sm">
                 <div>
                     <span class="block text-gray-400">Raça</span>
                     <span class="font-bold text-yellow-500">Golias</span>
@@ -50,8 +50,9 @@
             </div>
             <div class="card rounded-lg p-6 flex flex-col items-center justify-center">
                 <h3 class="text-lg mb-2 font-cinzel">Classe de Armadura</h3>
-                <span class="text-5xl font-bold">13</span>
+                <span class="text-5xl font-bold">14</span>
                  <span class="text-gray-400 mt-2">Defesa sem Armadura</span>
+                 <span class="text-gray-500 text-sm mt-2">10+const+dest</span>
             </div>
             <div class="card rounded-lg p-6 flex flex-col items-center justify-center">
                 <h3 class="text-lg mb-2 font-cinzel">Deslocamento</h3>
@@ -70,7 +71,7 @@
                     <span class="text-gray-400">Destreza</span>
                     <p class="text-2xl font-bold">13 (+1)</p>
                 </div>
-                 <div class="card rounded-lg p-4">
+                 <div class="card rounded-lg p-4">  
                     <span class="text-gray-400">Constituição</span>
                     <p class="text-2xl font-bold">16 (+3)</p>
                 </div>
@@ -92,12 +93,12 @@
                 <div class="mb-6">
                     <h3 class="font-cinzel text-xl mb-3">Testes de Resistência</h3>
                     <div class="grid grid-cols-2 sm:grid-cols-3 gap-2 text-sm">
-                        <p class="proficient"><strong>+5</strong> Força</p>
-                        <p><strong>+1</strong> Destreza</p>
-                        <p class="proficient"><strong>+4</strong> Constituição</p>
-                        <p><strong>-1</strong> Inteligência</p>
-                        <p><strong>+1</strong> Sabedoria</p>
-                        <p><strong>+0</strong> Carisma</p>
+                        <p class="proficient"><strong class="text-yellow-400">+5</strong> Força</p>
+                        <p><strong class="text-yellow-400">+1</strong> Destreza</p>
+                        <p class="proficient"><strong class="text-yellow-400">+4</strong> Constituição</p>
+                        <p><strong class="text-yellow-400">-1</strong> Inteligência</p>
+                        <p><strong class="text-yellow-400">+1</strong> Sabedoria</p>
+                        <p><strong class="text-yellow-400">+0</strong> Carisma</p>
                     </div>
                     <p class="text-xs text-gray-400 mt-2">Bônus de Proficiência: +2</p>
                 </div>
@@ -125,15 +126,15 @@
             <h2 class="text-2xl mb-4">Ataques e Inventário</h2>
             <div class="space-y-3 mb-6">
                 <div class="p-3 bg-black bg-opacity-20 rounded-md">
-                    <p><strong>Machado Grande:</strong> <span class="text-yellow-300">+5</span> para acertar, dano <span class="text-yellow-300">1d12+3</span> cortante (+2 com Fúria).</p>
+                    <p><strong class="text-yellow-400">Machado Grande:</strong> <span class="text-yellow-300">+5</span> para acertar, dano <span class="text-yellow-300">1d12+3</span> cortante (+2 com Fúria).</p>
                     <p class="text-xs text-gray-400">Propriedades: Pesada, Duas Mãos.</p>
                 </div>
                  <div class="p-3 bg-black bg-opacity-20 rounded-md">
-                    <p><strong>Machado de Mão (x2):</strong> <span class="text-yellow-300">+5</span> para acertar, dano <span class="text-yellow-300">1d6+3</span> cortante. Arremesso (6/18m).</p>
+                    <p><strong class="text-yellow-400">Machado de Mão (x2):</strong> <span class="text-yellow-300">+5</span> para acertar, dano <span class="text-yellow-300">1d6+3</span> cortante. Arremesso (6/18m).</p>
                      <p class="text-xs text-gray-400">Propriedades: Leve, Arremesso.</p>
                 </div>
                  <div class="p-3 bg-black bg-opacity-20 rounded-md">
-                    <p><strong>Azagaia (x4):</strong> <span class="text-yellow-300">+5</span> para acertar, dano <span class="text-yellow-300">1d6+3</span> perfurante. Arremesso (9/36m).</p>
+                    <p><strong class="text-yellow-400">Azagaia (x4):</strong> <span class="text-yellow-300">+5</span> para acertar, dano <span class="text-yellow-300">1d6+3</span> perfurante. Arremesso (9/36m).</p>
                     <p class="text-xs text-gray-400">Propriedades: Arremesso.</p>
                 </div>
             </div>
@@ -185,7 +186,7 @@
         <details class="card rounded-lg">
             <summary><h2 class="inline text-2xl">Características Especiais</h2></summary>
             <div class="prose prose-invert max-w-none text-gray-300 space-y-4">
-                <p><strong>Fúria (3/descanso longo):</strong> Ativação: Ação bônus.
+                <p><strong class="text-yellow-400">Fúria (3/descanso longo):</strong> Ativação: Ação bônus.
 
                     Efeitos enquanto estiver em fúria:
                     <br>
@@ -200,7 +201,7 @@
                     Ficar inconsciente.
                     <br>
                     Não atacar ou sofrer dano desde o seu turno anterior.</p>
-                <p><strong>Ataque Descuidado:</strong> Uso: Ao fazer seu primeiro ataque no turno.
+                <p><strong class="text-yellow-400"></strong>Ataque Descuidado:</strong> Uso: Ao fazer seu primeiro ataque no turno.
                       <br>
                     Efeito:
                      <br>
@@ -209,7 +210,7 @@
                     Em troca, todos os ataques contra você até o início do seu próximo turno têm vantagem.
                     <br>
                     Aplicação estratégica: Ideal quando precisa garantir um acerto ou maximizar dano, especialmente no início do combate.</p>
-                <p><strong>Protetores Ancestrais:</strong> Pré-requisito: Estar em Fúria.
+                <p><strong class="text-yellow-400">Protetores Ancestrais:</strong> Pré-requisito: Estar em Fúria.
                        <br>
                     Efeito:
                     <br>
@@ -220,7 +221,7 @@
                     Caso ela ataque outro alvo, esse alvo tem resistência ao dano causado pelo ataque.
                     <br>
                     Uso tático: Ideal para proteger aliados em combate, direcionando o foco dos inimigos para você.</p>
-                <p><strong>Resistência da Pedra (1/descanso):</strong>Ativação: Reação ao sofrer dano.
+                <p><strong class="text-yellow-400">Resistência da Pedra (1/descanso):</strong>Ativação: Reação ao sofrer dano.
                     <br>
                     Efeito: Reduz o dano recebido em 1d12 + seu modificador de Constituição.
                     <br>
@@ -229,7 +230,7 @@
                     Pode ser usado para absorver um grande golpe e continuar em pé.
                     <br>
                     Funciona contra qualquer tipo de dano.</p>
-                <p><strong>Sentido de Perigo:</strong>Efeito:
+                <p><strong class="text-yellow-400">Sentido de Perigo:</strong>Efeito:
                     Efeito:
                     <br>
                     Vantagem em testes de resistência de Destreza contra efeitos que você possa ver, como:
@@ -246,7 +247,7 @@
                     Magias como Fireball, Lightning Bolt, etc.
                     <br>
                     Pré-requisito: Você não pode estar cego, surdo ou incapacitado.</p>
-                <p><strong>Defesa sem Armadura:</strong> Cálculo da CA:
+                <p><strong class="text-yellow-400">Defesa sem Armadura:</strong> Cálculo da CA:
                      <br>
                     Classe de Armadura (CA) = 10 + modificador de Destreza + modificador de Constituição.
                     <br>
@@ -255,7 +256,7 @@
                     Só funciona se você não estiver vestindo armadura.
                     <br>
                     Pode usar escudo sem perder esse benefício.</p>
-                 <p><strong>Errante:</strong>Capacidade de Navegação:
+                 <p><strong class="text-yellow-400">Errante:</strong>Capacidade de Navegação:
                        <br>
                     Memória excepcional para terrenos, mapas e rotas.
                     <br>
@@ -264,7 +265,7 @@
                     Fornecimento de Recursos:
                     <br>
                     Consegue encontrar comida e água suficientes para si mesmo e até cinco outras criaturas por dia, desde que o ambiente tenha recursos.</p>
-                <p><strong>Poderio Atlético:</strong>Capacidade física ampliada:
+                <p><strong class="text-yellow-400">Poderio Atlético:</strong>Capacidade física ampliada:
                     <br>
                     Você é considerado como se tivesse uma categoria de tamanho maior (como Grande) apenas para:
                     <br>
@@ -280,10 +281,10 @@
             <summary><h2 class="inline text-2xl">Características Gerais Vorthak</h2></summary>
             <div class="prose prose-invert max-w-none text-gray-300">
                 <ul>
-                    <li><strong>Traço de Personalidade:</strong> "Sou um homem de poucas palavras, mas minhas ações falam mais alto."</li>
-                    <li><strong>Ideal:</strong> "Minha força existe para proteger aqueles que não podem se defender sozinhos. É o legado de meus ancestrais."</li>
-                    <li><strong>Vínculo:</strong> "Devo honrar os espíritos de meus ancestrais e de estar em tudo que faço, pois eles me guiam e me fortalecem."</li>
-                    <li><strong>Defeito:</strong> "Tenho pouca paciência para as leis e costumes da cidade; a lei da natureza é a única que realmente importa."</li>
+                    <li><strong class="text-yellow-400">Traço de Personalidade:</strong> "Sou um homem de poucas palavras, mas minhas ações falam mais alto."</li>
+                    <li><strong class="text-yellow-400">Ideal:</strong> "Minha força existe para proteger aqueles que não podem se defender sozinhos. É o legado de meus ancestrais."</li>
+                    <li><strong class="text-yellow-400">Vínculo:</strong> "Devo honrar os espíritos de meus ancestrais e de estar em tudo que faço, pois eles me guiam e me fortalecem."</li>
+                    <li><strong class="text-yellow-400">Defeito:</strong> "Tenho pouca paciência para as leis e costumes da cidade; a lei da natureza é a única que realmente importa."</li>
                 </ul>
             </div>
         </details>
