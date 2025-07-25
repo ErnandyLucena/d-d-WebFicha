@@ -25,7 +25,7 @@
                 </div>
                 <div>
                     <span class="block text-gray-400">Classe</span>
-                    <span class="font-bold text-yellow-500">Bárbaro 3</span>
+                    <span class="font-bold text-yellow-500">Bárbaro 4</span>
                 </div>
                 <div>
                     <span class="block text-gray-400">Antecedente</span>
@@ -43,14 +43,14 @@
                 <h3 class="text-lg mb-2 font-cinzel">Pontos de Vida</h3>
                 <div class="flex items-center gap-4">
                     <button id="decrease-hp" class="hp-button w-10 h-10 rounded-full text-2xl flex items-center justify-center pb-1">-</button>
-                    <span id="current-hp" class="text-5xl font-bold">32</span>
+                    <span id="current-hp" class="text-5xl font-bold">42</span>
                     <button id="increase-hp" class="hp-button w-10 h-10 rounded-full text-2xl flex items-center justify-center pb-1">+</button>
                 </div>
                 <span class="text-gray-400 mt-2">Total: 32</span>
             </div>
             <div class="card rounded-lg p-6 flex flex-col items-center justify-center">
                 <h3 class="text-lg mb-2 font-cinzel">Classe de Armadura</h3>
-                <span class="text-5xl font-bold">14</span>
+                <span class="text-5xl font-bold">15</span>
                  <span class="text-gray-400 mt-2">Defesa sem Armadura</span>
                  <span class="text-gray-500 text-sm mt-2">10+const+dest</span>
             </div>
@@ -65,11 +65,11 @@
             <div class="lg:col-span-1 space-y-3 text-center">
                 <div class="card rounded-lg p-4">
                     <span class="text-gray-400">Força</span>
-                    <p class="text-2xl font-bold">17 (+3)</p>
+                    <p class="text-2xl font-bold">18 (+4)</p>
                 </div>
                  <div class="card rounded-lg p-4">
                     <span class="text-gray-400">Destreza</span>
-                    <p class="text-2xl font-bold">13 (+1)</p>
+                    <p class="text-2xl font-bold">14 (+2)</p>
                 </div>
                  <div class="card rounded-lg p-4">  
                     <span class="text-gray-400">Constituição</span>
@@ -93,8 +93,8 @@
                 <div class="mb-6">
                     <h3 class="font-cinzel text-xl mb-3">Testes de Resistência</h3>
                     <div class="grid grid-cols-2 sm:grid-cols-3 gap-2 text-sm">
-                        <p class="proficient"><strong class="text-yellow-400">+5</strong> Força</p>
-                        <p><strong class="text-yellow-400">+1</strong> Destreza</p>
+                        <p class="proficient"><strong class="text-yellow-400">+6</strong> Força</p>
+                        <p><strong class="text-yellow-400">+2</strong> Destreza</p>
                         <p class="proficient"><strong class="text-yellow-400">+4</strong> Constituição</p>
                         <p><strong class="text-yellow-400">-1</strong> Inteligência</p>
                         <p><strong class="text-yellow-400">+1</strong> Sabedoria</p>
@@ -107,15 +107,15 @@
                     <h3 class="font-cinzel text-xl mb-3">Perícias</h3>
                     <table class="w-full text-left text-sm skill-table">
                         <tbody>
-                            <tr><td>+1 Acrobacia (DES)</td><td class="proficient">+5 Atletismo (FOR)</td></tr>
+                            <tr><td>+2 Acrobacia (DES)</td><td class="proficient">+6 Atletismo (FOR)</td></tr>
                             <tr><td>+0 Atuação (CAR)</td><td>+0 Enganação (CAR)</td></tr>
                             <tr><td>-1 Arcanismo (INT)</td><td>+1 Adestrar Animais (SAB)</td></tr>
                             <tr><td>-1 História (INT)</td><td class="proficient">+2 Intimidação (CAR)</td></tr>
                             <tr><td>+1 Intuição (SAB)</td><td>-1 Investigação (INT)</td></tr>
                             <tr><td>+1 Medicina (SAB)</td><td>-1 Natureza (INT)</td></tr>
                             <tr><td>PROF +3 Percepção (SAB)</td><td>+0 Persuasão (CAR)</td></tr>
-                            <tr><td>-1 Religião (INT)</td><td>+1 Prestidigitação (DES)</td></tr>
-                            <tr><td>+1 Furtividade (DES)</td><td class="proficient">+3 Sobrevivência (SAB)</td></tr>
+                            <tr><td>-1 Religião (INT)</td><td>+2 Prestidigitação (DES)</td></tr>
+                            <tr><td>+2 Furtividade (DES)</td><td class="proficient">+3 Sobrevivência (SAB)</td></tr>
                         </tbody>
                     </table>
                 </div>
@@ -125,19 +125,19 @@
         <section class="card rounded-lg p-6">
             <h2 class="text-2xl mb-4">Ataques e Inventário</h2>
             <div class="space-y-3 mb-6">
-                <div class="p-3 bg-black bg-opacity-20 rounded-md">
-                    <p><strong class="text-yellow-400">Machado Grande:</strong> <span class="text-yellow-300">+5</span> para acertar, dano <span class="text-yellow-300">1d12+3</span> cortante (+2 com Fúria).</p>
-                    <p class="text-xs text-gray-400">Propriedades: Pesada, Duas Mãos.</p>
-                </div>
-                 <div class="p-3 bg-black bg-opacity-20 rounded-md">
-                    <p><strong class="text-yellow-400">Machado de Mão (x2):</strong> <span class="text-yellow-300">+5</span> para acertar, dano <span class="text-yellow-300">1d6+3</span> cortante. Arremesso (6/18m).</p>
-                     <p class="text-xs text-gray-400">Propriedades: Leve, Arremesso.</p>
-                </div>
-                 <div class="p-3 bg-black bg-opacity-20 rounded-md">
-                    <p><strong class="text-yellow-400">Azagaia (x4):</strong> <span class="text-yellow-300">+5</span> para acertar, dano <span class="text-yellow-300">1d6+3</span> perfurante. Arremesso (9/36m).</p>
-                    <p class="text-xs text-gray-400">Propriedades: Arremesso.</p>
-                </div>
-            </div>
+    <div class="p-3 bg-black bg-opacity-20 rounded-md">
+        <p><strong class="text-yellow-400">Machado Grande:</strong> <span class="text-yellow-300">+6</span> para acertar, dano <span class="text-yellow-300">1d12+4</span> cortante (+2 com Fúria).</p>
+        <p class="text-xs text-gray-400">Propriedades: Pesada, Duas Mãos.</p>
+    </div>
+    <div class="p-3 bg-black bg-opacity-20 rounded-md">
+        <p><strong class="text-yellow-400">Machado de Mão (x2):</strong> <span class="text-yellow-300">+6</span> para acertar, dano <span class="text-yellow-300">1d6+4</span> cortante. Arremesso (6/18m).</p>
+        <p class="text-xs text-gray-400">Propriedades: Leve, Arremesso.</p>
+    </div>
+    <div class="p-3 bg-black bg-opacity-20 rounded-md">
+        <p><strong class="text-yellow-400">Azagaia (x4):</strong> <span class="text-yellow-300">+6</span> para acertar, dano <span class="text-yellow-300">1d6+4</span> perfurante. Arremesso (9/36m).</p>
+        <p class="text-xs text-gray-400">Propriedades: Arremesso.</p>
+    </div>
+</div>
             
             <hr class="border-gray-600 mb-6">
             
